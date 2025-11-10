@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ejercicios CPU y Memoria</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    pre {
+      background-color: #eee;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+    .highlight {
+      background-color: #d0ebff;
+      padding: 0.5rem;
+      border-left: 4px solid #339af0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background-color: #e6f2ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ejercicios sobre CPU, Memoria Caché y Ancho de Banda</h1>
+
+  <h2>Introducción</h2>
+  <p>En este trabajo exploramos conceptos fundamentales del hardware informático: el procesador (CPU), la memoria caché y el ancho de banda. Estos elementos son clave para entender cómo funciona un ordenador y cómo optimizar su rendimiento. A través de comparaciones, gráficos y ejemplos reales, aprenderemos a explicar estos temas de forma clara y sencilla.</p>
+
+  <h2>1. Comparación entre Google y Perplexity.ai</h2>
+  <p><strong>Google:</strong> ofrece resultados variados como Wikipedia o Concepto.de, con explicaciones técnicas.</p>
+  <p><strong>Perplexity.ai:</strong> da respuestas más concisas y adaptadas al nivel del estudiante.</p>
+  <table>
+    <tr><th>Plataforma</th><th>Ventajas</th><th>Desventajas</th></tr>
+    <tr><td>Google</td><td>Variedad de fuentes, profundidad técnica</td><td>Puede ser demasiado complejo</td></tr>
+    <tr><td>Perplexity.ai</td><td>Respuestas claras, estilo conversacional</td><td>Menos fuentes visibles</td></tr>
+  </table>
+  <div class="highlight">Conclusión: <strong>Perplexity.ai</strong> es mejor para estudiantes por su claridad y tono amigable.</div>
+
+  <h2>2. Prompt usado en Perplexity.ai</h2>
+  <pre>
+Hola, buenos días. A partir de ahora serás un experto en Hardware de ordenadores.
+Quiero que mantengamos una conversación escrita.
+Te haré preguntas sobre temas básicos de informática y quiero respuestas entendibles y concisas.
+  </pre>
+
+  <h2>3. Explicación del gráfico del procesador CPU</h2>
+  <p>El procesador es como una fábrica:</p>
+  <ul>
+    <li><strong>Núcleos:</strong> ejecutan instrucciones (los trabajadores).</li>
+    <li><strong>Caché:</strong> almacén rápido de datos.</li>
+    <li><strong>Unidad de control:</strong> el jefe que organiza todo.</li>
+    <li><strong>ALU:</strong> realiza cálculos.</li>
+    <li><strong>Bus de datos:</strong> conecta con otros componentes.</li>
+  </ul>
+  <p><em>Ejemplo:</em> Si tienes varios núcleos, puedes abrir varias aplicaciones a la vez sin que el ordenador se ralentice.</p>
+
+  <h2>4. Gráfico propio sobre la memoria caché</h2>
+  <p>La memoria caché mejora el rendimiento del procesador al reducir el tiempo de acceso a datos.</p>
+  <p><strong>Tipos:</strong> L1 (rápida), L2 (intermedia), L3 (más grande pero más lenta).</p>
+  <pre>
++---------------------+
+|     CPU             |
+|  +-------------+    |
+|  | Caché L1    | <-- Datos más usados
+|  +-------------+    |
+|  | Caché L2    | <-- Datos frecuentes
+|  +-------------+    |
+|  | Caché L3    | <-- Datos compartidos
+|  +-------------+    |
++---------------------+
+        ↓
+     Memoria RAM
+  </pre>
+  <p><em>Analogía:</em> Es como tener herramientas cerca del trabajador. Cuanto más cerca, más rápido trabaja.</p>
+
+  <h2>5. Explicación de “ancho de banda” y ejercicio</h2>
+  <p><strong>Definición:</strong> cantidad de datos que se pueden transmitir por una red en un tiempo determinado.</p>
+  <p><strong>Ejercicio:</strong> Si tienes una conexión de 100 Mbps, ¿cuántos megabytes puedes descargar en 10 segundos?</p>
+  <p><strong>Solución:</strong> 100 Mbps = 12.5 MB/s → 12.5 × 10 = <strong>125 MB</strong></p>
+  <p><em>Analogía:</em> Es como una autopista: más ancho de banda = más coches (datos) pasando a la vez.</p>
+
+  <h2>6. Ejemplo real en una empresa informática</h2>
+  <p>En una empresa informática moderna, el ancho de banda es fundamental para garantizar que todos los servicios digitales funcionen sin interrupciones. Imagina una empresa de desarrollo de software con 50 empleados que trabajan en la nube, hacen videollamadas, suben y descargan archivos grandes, y usan herramientas como GitHub, Figma o Google Drive.</p>
+
+  <p><strong>Situación real:</strong> Cada empleado necesita al menos 5 Mbps para trabajar cómodamente. Si todos están conectados al mismo tiempo:</p>
+  <ul>
+    <li>50 empleados × 5 Mbps = <strong>250 Mbps</strong> de ancho de banda mínimo.</li>
+    <li>Si la empresa solo tiene 100 Mbps contratados, habrá lentitud, cortes en videollamadas y fallos al subir archivos.</li>
+  </ul>
+
+  <p><strong>Consecuencias de no calcularlo bien:</strong></p>
+  <ul>
+    <li>Retrasos en entregas de proyectos.</li>
+    <li>Frustración del equipo técnico.</li>
+    <li>Pérdida de productividad y mala imagen ante clientes.</li>
+  </ul>
+
+  <p><strong>Solución:</strong> Hacer un estudio de necesidades y contratar un plan de fibra óptica simétrica de al menos 300 Mbps, con posibilidad de escalar según el crecimiento de la empresa.</p>
+
+  <div class="highlight">
+    <strong>Conclusión:</strong> Conocer el ancho de banda necesario no es solo un dato técnico, es una decisión estratégica que afecta directamente al rendimiento y éxito de una empresa informática.
+  </div>
+
+  <h2>Conclusión final</h2>
+  <p>Hemos aprendido que el rendimiento de un ordenador depende de cómo se gestionan sus recursos internos. La CPU, la memoria caché y el ancho de banda son elementos clave que permiten que todo funcione de forma rápida y eficiente. Entender estos conceptos nos ayuda a tomar mejores decisiones al usar o configurar equipos informáticos, tanto en casa como en entornos profesionales.</p>
+
+</body>
+</html>
